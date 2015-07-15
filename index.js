@@ -5,6 +5,9 @@ var express,
     parentApp,
     errors;
 
+// Include any custom additions
+require('./helpers')();
+
 // Make sure dependencies are installed and file system permissions are correct.
 require('./core/server/utils/startup-check').check();
 
